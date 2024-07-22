@@ -1,0 +1,218 @@
+@font-face {
+    font-family: 'Pretendo';
+    src: url("font/Pretendo.ttf") format('truetype'), url("font/Pretendo.woff") format('woff'), url("font/Pretendo.woff2") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  body {
+    background: #09cbe4;
+  }
+  
+  input.btn-on,
+  input.btn-off {
+    display: block;
+    margin: 0 auto;
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  input.btn-hide {
+    display: none;
+  }
+  
+  .gameboy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    width: 422px;
+    height: 697px;
+    background: #eee;
+    border-radius: 10px 10px 60px 10px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .screen-cont {
+    position: relative;
+    top: 60px;
+    width: 342px;
+    height: 272px;
+    margin-bottom: 58px;
+    background-color: #777;
+    border-radius: 13px 13px 50px 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .screen {
+    position: relative;
+    top: 22px;
+    background: #bdae58;
+    width: 225px;
+    height: 205px;
+    box-shadow: inset 3px 3px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #pokegame-info {
+    position: absolute;
+    top: 30%;
+    left: 24%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+    height: 21%;
+    width: 30%;
+    margin-top: -3.7rem;
+    margin-bottom: 4.2rem;
+}  
+  .header {
+    width: 57%;
+    height: 3px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    text-align: right;
+    font-size: 10px;
+    font-family: sans-serif;
+    color: #b3b3b3;
+  }
+  
+  .header:before,
+  .header:after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    height: 3px;
+    background-color: #8b1d90;
+    box-shadow: 0 6px 0 #283593;
+  }
+  
+  .header:before {
+    left: 4px;
+    width: 90px;
+  }
+  
+  .header:after {
+    right: 9px;
+    width: 56px;
+  }
+  
+  .animated-text {
+    opacity: 0;
+    color: #8a891f;
+    font-size: 17px;
+    font-family: "Pretendo";
+    transition: top 3s linear;
+  }
+  
+  .animated-text.end {
+    opacity: 1;
+    top: 50px;
+  }
+  
+  .copy {
+    position: relative;
+    top: -2px;
+    margin-left: 2px;
+    font-size: 15px;
+    font-family: monospace;
+  }
+  
+  .power {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 100px;
+    left: 20px;
+    border-radius: 50%;
+    background-color: #b98181;
+    transition: background-color 300ms linear;
+  }
+  
+  .power:before {
+    content: "BATTERY";
+    position: relative;
+    top: 18px;
+    left: -10px;
+    font-size: 8px;
+    font-family: sans-serif;
+    color: #b3b3b3;
+  }
+  
+  .power.power-on {
+    background-color: #f00;
+    box-shadow: 0 0 3px 1px #ef5350;
+  }
+  .pokegame-container-button{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 5px #000;
+    margin-top: 1rem;
+    user-select: none;
+    
+}
+
+.pokegame-container-button button{
+    height: 100%;
+    width: 100%;
+    font-family: 'Press Start 2P', cursive, sans-serif;
+    border: none;
+    font-size: medium;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.pokegame-container-button:hover {
+    background-color: #00f4f4;
+    color: #fff;
+}
+
+.pokegame-container-button:active {
+    box-shadow: none;
+    transform: translateY(2px);
+}
+
+#hide{
+    filter:brightness(0);
+}
+  
+  .phones {
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    padding: 3px 5px;
+    transform: translateX(-50%);
+    color: #dadada;
+    background-color: #e8e8e8;
+  }
+
+  
+  .on-off {
+    position: absolute;
+    top: 2px;
+    left: 20%;
+    padding: 3px 5px;
+    transform: translateX(-50%);
+    color: #dadada;
+    background-color: #e8e8e8;
+    font-size: 8px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    border-radius: 30px;
+  }
+  .gh-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+  }
+  
+  
